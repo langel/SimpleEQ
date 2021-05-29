@@ -100,7 +100,7 @@ private:
 		chain.template setBypassed<1>(true);
 		chain.template setBypassed<2>(true);
 		chain.template setBypassed<3>(true);
-		switch (lowCutSlope) {
+		switch (slope) {
 			case Slope_48: {
 				update<3>(chain, coefficients);
 			}
@@ -115,6 +115,11 @@ private:
 			}
 		}
 	};
+
+	void updateLowCutFilters(const ChainSettings& chainSettings);
+	void updateHighCutFilters(const ChainSettings& chainSettings);
+
+	void updateFilters();
 
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (SimpleEQAudioProcessor)
