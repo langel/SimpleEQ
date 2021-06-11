@@ -46,9 +46,9 @@ void LookAndFeel::drawRotarySlider(juce::Graphics& g,
 
 		r.setSize(strWidth + 4, rswl->getTextHeight() + 2);
 		r.setCentre(bounds.getCentre());
-		g.setColour(Colours::black);
+		g.setColour(enabled ? Colours::black : Colours::darkgrey);
 		g.fillRect(r);
-		g.setColour(Colours::white);
+		g.setColour(enabled ? Colours::white : Colours::lightgrey);
 		g.drawFittedText(text, r.toNearestInt(), juce::Justification::centred, 1);
 	}
 
@@ -68,7 +68,7 @@ void LookAndFeel::drawToggleButton(juce::Graphics& g,
 		// XXX reduce click target
 		// "hit test" function we can override
 		g.setColour(Colours::red);
-		g.drawRect(bounds);
+		//g.drawRect(bounds);
 		auto size = jmin(bounds.getWidth(), bounds.getHeight()) - 5;
 		auto r = bounds.withSizeKeepingCentre(size, size).toFloat();
 		float ang = 25.f;
