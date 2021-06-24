@@ -5,14 +5,30 @@
               pluginFormats="buildAU,buildStandalone,buildVST,buildVST3" cppLanguageStandard="17">
   <MAINGROUP id="DfiaPh" name="SimpleEQ">
     <GROUP id="{D812E62E-C831-5CF4-36EC-FE11F80B214D}" name="Source">
+      <GROUP id="{0BBCF644-894D-D30D-E2A8-0FDA51C10357}" name="comp">
+        <FILE id="Sw9QGs" name="analyzer.h" compile="0" resource="0" file="Source/analyzer.h"/>
+        <FILE id="kJZdTL" name="lookAndFeel.cpp" compile="1" resource="0" file="Source/lookAndFeel.cpp"/>
+        <FILE id="ppWwzX" name="lookAndFeel.h" compile="0" resource="0" file="Source/lookAndFeel.h"/>
+        <FILE id="F5xUzM" name="pathProducer.h" compile="0" resource="0" file="Source/pathProducer.h"/>
+        <FILE id="YMD2pH" name="PluginEditor.cpp" compile="1" resource="0"
+              file="Source/PluginEditor.cpp"/>
+        <FILE id="wBJWpf" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+        <FILE id="JJLGRu" name="responseCurve.cpp" compile="1" resource="0"
+              file="Source/responseCurve.cpp"/>
+        <FILE id="iAejHM" name="responseCurve.h" compile="0" resource="0" file="Source/responseCurve.h"/>
+        <FILE id="Dzz7Sq" name="rotarySlider.cpp" compile="1" resource="0"
+              file="Source/rotarySlider.cpp"/>
+        <FILE id="bbR2vR" name="rotarySlider.h" compile="0" resource="0" file="Source/rotarySlider.h"/>
+      </GROUP>
+      <FILE id="dvKzZk" name="fft.h" compile="0" resource="0" file="Source/fft.h"/>
+      <FILE id="N7sw5W" name="filterChain.cpp" compile="1" resource="0" file="Source/filterChain.cpp"/>
+      <FILE id="qHBIAQ" name="filterChain.h" compile="0" resource="0" file="Source/filterChain.h"/>
       <FILE id="BaURmm" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="O24oar" name="PluginProcessor.h" compile="0" resource="0"
             file="Source/PluginProcessor.h"/>
-      <FILE id="YMD2pH" name="PluginEditor.cpp" compile="1" resource="0"
-            file="Source/PluginEditor.cpp"/>
-      <FILE id="wBJWpf" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
     </GROUP>
+    <FILE id="VsOpar" name="fifo.h" compile="0" resource="0" file="Source/fifo.h"/>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
   <EXPORTFORMATS>
